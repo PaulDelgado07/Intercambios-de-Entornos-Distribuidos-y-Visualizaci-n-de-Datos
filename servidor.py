@@ -8,17 +8,17 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# Modelo base
+ 
 class Estudiante(BaseModel):
     nombre: str = Field(..., min_length=2)
     carrera: str = Field(..., min_length=2)
     nota: float = Field(..., ge=0, le=10)
 
-# Modelo de salida
+
 class EstudianteOut(Estudiante):
     id: str
 
-# Base de datos simulada
+
 db: List[dict] = [
     {
         "id": "1",
@@ -40,11 +40,11 @@ db: List[dict] = [
     }
 ]
 
-# Función reutilizable
+
 def buscar(id: str):
     return next((e for e in db if e["id"] == id), None)
 
-# Ruta raíz
+
 @app.get("/", tags=["Inicio"])
 def raiz():
     return {
@@ -52,7 +52,7 @@ def raiz():
         "version": "1.0.0",
     }
 
-# Listar con filtros
+
 @app.get("/estudiantes", tags=["Estudiantes"])
 def listar(
     carrera: Optional[str] = Query(None, min_length=2),
@@ -80,13 +80,32 @@ def listar(
         "data": resultado,
     }
 
-# Obtener por ID
+
 @app.get("/estudiantes/{id}", tags=["Estudiantes"])
 def obtener(id: str):
     estudiante = buscar(id)
     if estudiante:
         return estudiante
     raise HTTPException(status_code=404, detail="Estudiante no encontrado")
+
+
+@app.post("/estudiantes", tags=["Estudiantes"], status_code=201)
+def crear(estudiante: Estudiante):
+    nuevo_id = str(max(int(e["id"]) for e in db) + 1) if db else "1"
+
+    nuevo = {
+        "id": nuevo_id,
+        "nombre": estudiante.nombre,
+        "carrera": estudiante.carrera,
+        "nota": estudiante.nota,
+    }
+
+    db.append(nuevo)
+
+    return {
+        "mensaje": "Estudiante creado exitosamente",
+        "data": nuevo,
+    }
 
 
 #uvicorn servidor:app --reload
