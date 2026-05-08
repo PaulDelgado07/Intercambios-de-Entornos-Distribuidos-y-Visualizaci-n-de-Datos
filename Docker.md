@@ -1,4 +1,4 @@
-## Contenedores Docker
+# Contenedores Docker
 
 Docker es una plataforma de codigo abierto que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones en contenedores
 
@@ -12,7 +12,7 @@ Es importante señalar que cuando la gente habla de Docker, normalmente se refie
 
 Se denominan contenedores por su analogía con los contenedores de los barcos, las características que comparten son muchas: su contenido está aislado, pueden alojar cualquier objeto, se pueden transportar fácilmente. Los contenedores revolucionaron el transporte, redujeron el coste, los tiempos de carga y descarga, los daños en la mercancía... hoy en día el 90% de los envíos se realizan en contenedores estándar.
 
-# Introducción a Docker y Contenedores
+## Introducción a Docker y Contenedores
 
 Es importante señalar que cuando la gente habla de Docker, normalmente se refiere a **Docker Engine**, el tiempo de ejecución para crear y ejecutar contenedores. Docker también se refiere a **Docker, Inc.¹**, la empresa que vende la versión comercial de Docker. También está relacionado con el proyecto de código **Docker²**, al que contribuyen Docker, Inc. y muchas otras organizaciones y personas.
 
