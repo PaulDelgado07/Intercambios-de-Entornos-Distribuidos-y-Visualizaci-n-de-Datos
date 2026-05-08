@@ -1,4 +1,4 @@
-### Contenedores Docker
+## Contenedores Docker
 
 Docker es una plataforma de codigo abierto que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones en contenedores
 
