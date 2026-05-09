@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Contenedores Docker
+=======
+### Contenedores Docker
+>>>>>>> d59c9218355b7f7b817d2bdfa6b884629176d250
 
 Docker es una plataforma de codigo abierto que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones en contenedores
 
@@ -12,7 +16,11 @@ Es importante señalar que cuando la gente habla de Docker, normalmente se refie
 
 Se denominan contenedores por su analogía con los contenedores de los barcos, las características que comparten son muchas: su contenido está aislado, pueden alojar cualquier objeto, se pueden transportar fácilmente. Los contenedores revolucionaron el transporte, redujeron el coste, los tiempos de carga y descarga, los daños en la mercancía... hoy en día el 90% de los envíos se realizan en contenedores estándar.
 
+<<<<<<< HEAD
 ## Introducción a Docker y Contenedores
+=======
+# Introducción a Docker y Contenedores
+>>>>>>> d59c9218355b7f7b817d2bdfa6b884629176d250
 
 Es importante señalar que cuando la gente habla de Docker, normalmente se refiere a **Docker Engine**, el tiempo de ejecución para crear y ejecutar contenedores. Docker también se refiere a **Docker, Inc.¹**, la empresa que vende la versión comercial de Docker. También está relacionado con el proyecto de código **Docker²**, al que contribuyen Docker, Inc. y muchas otras organizaciones y personas.
 
@@ -85,5 +93,8 @@ A continuación se muestra un desglose de los componentes principales asociados 
 - **docker hub:** es un repositorio en la nube de imágenes Docker.
 
 - **docker desktop:** es una aplicacion que permite ejecutar Docker en Windows y macOS.
+<<<<<<< HEAD
 
 En resumen : Docker funciona de manera similar a como lo hace un contenedor de carga. En lugar de construir un barco para cada tipo de mercancía, se utilizan contenedores estándar que se pueden transportar en cualquier barco. Lo mismo ocurre con Docker: una vez que se crea una imagen, se puede ejecutar en cualquier entorno que tenga Docker instalado.
+=======
+>>>>>>> d59c9218355b7f7b817d2bdfa6b884629176d250
