@@ -22,9 +22,8 @@ db : List[dict] = [
     {"id":"3", "nombre": "Carlos Estupiñan", "carrera":"Ingienería en Sistemas", "Nota": 8},
 ]
 
-print(db)
 
-
+print("Hola mundo")
 
 
 
