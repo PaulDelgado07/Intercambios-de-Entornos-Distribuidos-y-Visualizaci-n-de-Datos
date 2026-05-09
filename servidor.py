@@ -80,7 +80,7 @@ def listar(
         "data": resultado,
     }
 
-
+#get por el Id 
 @app.get("/estudiantes/{id}", tags=["Estudiantes"])
 def obtener(id: str):
     estudiante = buscar(id)
@@ -88,7 +88,7 @@ def obtener(id: str):
         return estudiante
     raise HTTPException(status_code=404, detail="Estudiante no encontrado")
 
-
+#Este es funcion post para poder ingresar estudiantes a la base de datos.
 @app.post("/estudiantes", tags=["Estudiantes"], status_code=201)
 def crear(estudiante: Estudiante):
     nuevo_id = str(max(int(e["id"]) for e in db) + 1) if db else "1"

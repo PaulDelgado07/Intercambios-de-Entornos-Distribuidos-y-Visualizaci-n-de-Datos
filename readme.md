@@ -4,8 +4,6 @@
 
 Toda la comunicacion en red se organiza en capas. El modelo OSI (Open System Interconnection) define 7 capas, y la pila TCP/IP del internet real simplifica esto a 4 capas. Los protocols que estudiaremos operan en la capa de aplicación, la más alta, y se apoyan en las capas inferiones para el transporte y direccionamiento (TCP/IP) .....
 
-# tabla
-
 | Capa                      | Protocolo                        | Responsabilidad                                           |
 | :------------------------ | :------------------------------- | :-------------------------------------------------------- |
 | **Aplicación** (capa 7/4) | HTTP, gRPC, WebSocket, DNS, SMTP | Lógica de la aplicación: qué datos y cómo se interpretan. |
